@@ -11,6 +11,8 @@ SupabaseClient conexao() {
   if (supabaseUrl.isEmpty || supabaseKey.isEmpty) {
     throw StateError('SUPABASE_URL ou SUPABASE_PUBLISHABLE_KEY não encontrados no arquivo .env');
   }
+  
+print("Executado!");
 
   return SupabaseClient(supabaseUrl, supabaseKey);
 }
